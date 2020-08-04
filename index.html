@@ -13,28 +13,28 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a class="logo" href="#top">
+				<a class="logo"  href="#firstPage">
 					<picture class="logo__img">
 						<source srcset="images/logo-mobile.png" media="(max-width: 640px)">
 						<img src="images/logo.png" alt="">
 					</picture>
 				</a>
-				<nav id="menu" class="menu">
-					<ul class="menu__list">
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#products">О ДРОНЕ</a>
+				<nav class="menu">
+					<ul id="menu" class="menu__list">
+						<li class="menu__list-item" data-menuanchor="secondPage">
+							<a class="menu__list-link" href="#secondPage">О ДРОНЕ</a>
 						</li>
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#benefits">ПРЕИМУЩЕСТВА</a>
+						<li class="menu__list-item" data-menuanchor="thirdPage">
+							<a class="menu__list-link" href="#thirdPage">ПРЕИМУЩЕСТВА</a>
 						</li>
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#specification">ХАРАКТЕРИСТИКИ</a>
+						<li class="menu__list-item" data-menuanchor="fourthPage">
+							<a class="menu__list-link" href="#fourthPage">ХАРАКТЕРИСТИКИ</a>
 						</li>
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#questions">ВОПРОСЫ</a>
+						<li class="menu__list-item" data-menuanchor="fifthPage">
+							<a class="menu__list-link" href="#fifthPage">ВОПРОСЫ</a>
 						</li>
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#contacts">КОНТАКТЫ</a>
+						<li class="menu__list-item" data-menuanchor="lastPage">
+							<a class="menu__list-link" href="#lastPage">КОНТАКТЫ</a>
 						</li>
 					</ul>
 				</nav>
@@ -46,7 +46,7 @@
 		</div>
 	</header>
 	<main id="fullpage">
-		<section id="top" class="page-section top">
+		<section class="page-section top active" data-anchor="firstPage">
 			<div class="page-section__wrapper top__wrapper">
 				<div class="container">
 					<div class="top__inner">
@@ -76,14 +76,14 @@
 					</div>
 				</div>
 				<div class="scroll__btn">
-					<a href="#products">
+					<a href="#secondPage">
 						<img src="images/arrow-down.svg" alt="">
 					</a>
 				</div>
 			</div>
 		</section>
 
-		<section id="products" class="page-section products">
+		<section class="page-section products" data-anchor="secondPage">
 			<div class="page-section__wrapper">
 				<div class="container">
 					<h3 class="title products__title">Что такое Mavic 2 Pro?</h3>
@@ -133,14 +133,14 @@
 					</div>
 				</div>
 				<div class="scroll__btn">
-					<a href="#benefits">
+					<a href="#thirdPage">
 						<img src="images/arrow-down.svg" alt="">
 					</a>
 				</div>
 			</div>
 		</section>
 
-		<section id="benefits" class="page-section benefits">
+		<section class="page-section benefits" data-anchor="thirdPage">
 			<div class="page-section__wrapper">
 				<div class="container">
 					<h3 class="title">Преимущества</h3>
@@ -208,14 +208,14 @@
 					</div>
 				</div>
 				<div class="scroll__btn">
-					<a href="#specification">
+					<a href="#fourthPage">
 						<img src="images/arrow-down.svg" alt="">
 					</a>
 				</div>
 			</div>
 		</section>
 
-		<section id="specification" class="page-section specification">
+		<section class="page-section specification" data-anchor="fourthPage">
 			<div class="page-section__wrapper">
 				<div class="container">
 					<h3 class="title">Характеристики</h3>
@@ -263,19 +263,19 @@
 					</div>
 				</div>
 				<div class="scroll__btn">
-					<a href="#questions">
+					<a href="#fifthPage">
 						<img src="images/arrow-down.svg" alt="">
 					</a>
 				</div>
 			</div>
 		</section>
 
-		<section id="questions" class="page-section questions">
+		<section class="page-section questions" data-anchor="fifthPage">
 			<div class="page-section__wrapper">
 				<div class="container">
 					<h3 class="title">Остались вопросы?</h3>
 					<div class="questions__items">
-						<div class="questions__item">
+						<div id="accordion" class="questions__item">
 							<h4 class="questions__item-title">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?</h4>
 							<p class="questions__item-text">
 								В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное
@@ -284,9 +284,7 @@
 								интеллектуальные
 								функции и уникальная функция Hyperlapse (гиперлапс).
 							</p>
-						</div>
-						<div class="questions__item questions__item--active">
-							<h4 class="questions__item-title">Чем Mavic 2 лучше Mavic Pro?</h4>
+							<h4 class="questions__item-title ">Чем Mavic 2 лучше Mavic Pro?</h4>
 							<p class="questions__item-text">
 								В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное
 								время,
@@ -294,8 +292,6 @@
 								интеллектуальные
 								функции и уникальная функция Hyperlapse (гиперлапс).
 							</p>
-						</div>
-						<div class="questions__item">
 							<h4 class="questions__item-title">Можно ли подключить Mavic 2 к очкам DJI Goggles?</h4>
 							<p class="questions__item-text">
 								В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное
@@ -304,8 +300,6 @@
 								интеллектуальные
 								функции и уникальная функция Hyperlapse (гиперлапс).
 							</p>
-						</div>
-						<div class="questions__item">
 							<h4 class="questions__item-title">Является ли Mavic 2 водонепроницаемым？</h4>
 							<p class="questions__item-text">
 								В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное
@@ -318,14 +312,14 @@
 					</div>
 				</div>
 				<div class="scroll__btn">
-					<a href="#contacts">
+					<a href="#lastPage">
 						<img src="images/arrow-down.svg" alt="">
 					</a>
 				</div>
 			</div>
 		</section>
 
-		<section id="contacts" class="page-section contacts">
+		<section id="contacts" class="page-section contacts" data-anchor="lastPage">
 			<div class="page-section__wrapper">
 				<div class="container">
 					<h3 class="title">Контакты</h3>
@@ -391,6 +385,9 @@
 			</div>
 		</section>
 	</main>
+
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.min.js"></script>
